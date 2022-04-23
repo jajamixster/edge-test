@@ -10,14 +10,13 @@
 nav {
     background: #151C54;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .logo {
     max-width: 1535px;
     margin: 0 auto;
-    border: 1px solid orange;
-    
+    /* border: 1px solid orange; */
 }
 
 .logo img {
@@ -25,20 +24,21 @@ nav {
     max-width: 135px;
     min-width: 50px;
     margin-left: 3vw;
+    margin-top: 3vh;
     height: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 header {
     background: #151C54;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .container {
     /* max-width: 80%; */
     max-width: 1535px;
     margin: 0 auto;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
 }
 
 .header-info {
@@ -46,7 +46,7 @@ header {
     margin-right: 3vw;
     margin-top: 0px;
     height: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .header-info img {
@@ -56,7 +56,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .highlight {
