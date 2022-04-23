@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav {
+    background: #151C54;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.logo {
+    max-width: 1535px;
+    margin: 0 auto;
+    border: 1px solid orange;
+    
+}
+
+.logo img {
+    width: 8vw;
+    max-width: 135px;
+    min-width: 50px;
+    margin-left: 3vw;
+    height: auto;
+    border: 1px solid white;
+}
+
+header {
+    background: #151C54;
+    border: 1px solid yellow;
+}
+
+.container {
+    /* max-width: 80%; */
+    max-width: 1535px;
+    margin: 0 auto;
+    border: 1px solid aqua;
+}
+
+.header-info {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 0px;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+.header-info img {
+    max-width: 1111px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid white;
+}
+
+.highlight {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ECF1FA;
+    border: 1px solid black;
+}
+
+.start-edge {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    height: 100%;
+    background: #ECF1FA;
+    /* border: 1px solid red; */
+}
+
+.start-edge img {
+    max-width: 1111px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.why-edge {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.why-edge img {
+    max-width: 1111px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.supergraphic {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #ECF1FA;
+    /* border: 1px solid black; */
+}
+
+.manage-by-pro img {
+    max-width: 1535px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.article {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.article img {
+    max-width: 1111px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.platform {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.platform img {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    max-width: 920px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #121A40;
+}
+
+footer img {
+    width: 100%;
+    max-width: 1536px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
