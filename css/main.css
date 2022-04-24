@@ -4,29 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
-}
-
-nav {
-    background: #151C54;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-}
-
-.logo {
-    max-width: 1535px;
-    margin: 0 auto;
-    /* border: 1px solid orange; */
-}
-
-.logo img {
-    width: 8vw;
-    max-width: 135px;
-    min-width: 50px;
-    margin-left: 3vw;
-    margin-top: 3vh;
-    height: auto;
-    /* border: 1px solid white; */
+    font-family: 'Kanit', sans-serif;;
 }
 
 header {
@@ -44,8 +22,8 @@ header {
 .header-info {
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-top: 0px;
     height: 100%;
+    background: #151C54;
     /* border: 1px solid blue; */
 }
 
@@ -153,6 +131,56 @@ header {
     display: block;
 }
 
+.platform h1 {
+    text-align: center;
+    font-size: 3.3vmin;
+    font-weight: normal;
+}
+
+.platform-info {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    color: #253470;
+}
+
+.platform p {
+    text-align: center;
+    font-size: 1.8vmin;
+    font-weight: lighter;
+}
+
+.orange {
+    color: #F15A38;
+}
+
+.violet {
+    color: #142782;
+}
+
+.platform-btn {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.platform-btn img {
+    width: 20vw;
+    max-width: 200px;
+    margin-left: 0.8vw;
+    margin-right: 0.8vw;
+}
+
+.platform-info-2 p {
+    text-align: center;
+    font-size: 1.8vmin;
+    font-weight: lighter;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
 footer {
     width: 100%;
     height: auto;
@@ -167,3 +195,4 @@ footer img {
     margin-right: auto;
     display: block;
 }
+
