@@ -38,27 +38,72 @@ header {
 }
 
 .highlight {
-    max-width: 100%;
-    margin: 0 auto;
-    background: #ECF1FA;
-    /* border: 1px solid black; */
-}
-
-.start-edge {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    height: 100%;
-    background: #ECF1FA;
-    /* border: 1px solid red; */
-}
-
-.start-edge img {
-    max-width: 1111px;
     width: 100%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    background: #ECF1FA;
+    border: 1px solid black;
+}
+
+.highlight h1 {
+    text-align: left;
+    font-size: 3.3vmin;
+    font-weight: normal;
+}
+
+#block_container {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+#block1, #block2 {
+    margin-bottom: 0px;
+}
+
+#edge_tab img {
+    text-align: left;
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+    width: 7vw;
+    max-width: 66px;
+}
+
+.open-account-image img{
+    max-width: 502px;
+    width: 40vw;
+    margin-top: 0px;
+    margin-right: 7vw;
+    border: 1px solid red;
+}
+
+.start-edge-btn {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 0px;
+    display: block;
+    text-align: left;
+    border: 1px solid red;
+}
+
+.start-edge-btn img {
+    width: 18vw;
+    max-width: 200px;
+    margin-right: 1.2vw;
+}
+
+.start-edge-info {
+    text-align: left;
+    font-size: 1.8vmin;
+    font-weight: lighter;
+    margin-top: 2vw;
 }
 
 .why-edge {
@@ -167,7 +212,7 @@ header {
 }
 
 .platform-btn img {
-    width: 20vw;
+    width: 18vw;
     max-width: 200px;
     margin-left: 0.8vw;
     margin-right: 0.8vw;
