@@ -23,7 +23,7 @@ header {
     margin-left: 3vw;
     margin-right: 3vw;
     height: 100%;
-    background: #151C54;
+    /* background: #151C54; */
     /* border: 1px solid blue; */
 }
 
@@ -43,7 +43,7 @@ header {
     margin-right: auto;
     display: block;
     background: #ECF1FA;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .highlight h1 {
@@ -78,7 +78,7 @@ header {
     width: 40vw;
     margin-top: 0px;
     margin-right: 7vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .start-edge-btn {
@@ -90,7 +90,7 @@ header {
     margin-left: 0px;
     display: block;
     text-align: left;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .start-edge-btn img {
