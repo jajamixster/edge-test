@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;;
+    font-family: 'Kanit', sans-serif;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
 }
 
 .container {
-    /* max-width: 80%; */
+    max-width: 80%;
     max-width: 1535px;
     margin: 0 auto;
     /* border: 1px solid aqua; */
@@ -48,7 +48,7 @@ header {
 
 .highlight h1 {
     text-align: left;
-    font-size: 3.3vmin;
+    font-size: min(3.3vmin, 36px);
     font-weight: normal;
 }
 
@@ -65,20 +65,29 @@ header {
     margin-bottom: 0px;
 }
 
-#edge_tab img {
-    text-align: left;
-    margin-top: 10vw;
-    margin-bottom: 2vw;
-    width: 7vw;
-    max-width: 66px;
+#block2 {
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+#block1 {
+    border: 1px solid blue;
 }
 
 .open-account-image img{
     max-width: 502px;
     width: 40vw;
     margin-top: 0px;
-    margin-right: 7vw;
-    /* border: 1px solid red; */
+    margin-right: 4vw;
+    border: 1px solid red;
+}
+
+#edge_tab img {
+    text-align: left;
+    /* margin-top: 5vw; */
+    margin-bottom: 2vw;
+    width: 7vw;
+    max-width: 66px;
 }
 
 .start-edge-btn {
@@ -101,7 +110,7 @@ header {
 
 .start-edge-info {
     text-align: left;
-    font-size: 1.8vmin;
+    font-size: min(1.8vmin, 18px);
     font-weight: lighter;
     margin-top: 2vw;
 }
@@ -183,14 +192,14 @@ header {
 }
 
 .platform-info {
-    margin-top: 2vw;
+    margin-top: 1.3vw;
     margin-bottom: 2vw;
     color: #253470;
 }
 
 .platform p {
     text-align: center;
-    font-size: 1.8vmin;
+    font-size: min(1.8vmin, 36px);
     font-weight: lighter;
 }
 
@@ -220,13 +229,13 @@ header {
 
 .platform-info-2 p {
     text-align: center;
-    font-size: 1.8vmin;
+    font-size: min(1.8vmin,18px);
     font-weight: lighter;
     margin-top: 2vw;
     margin-bottom: 4vw;
 }
 
-footer {
+/* footer {
     width: 100%;
     height: auto;
     background: #121A40;
@@ -239,5 +248,36 @@ footer img {
     margin-left: auto;
     margin-right: auto;
     display: block;
+} */
+
+footer {
+    background: #121a40;
 }
 
+#footer_container {
+    max-width: ;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+#footer2 {
+    justify-content: right;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    border: 1px solid red;
+}
+
+#footer2_1 {
+    border: 1px solid red;
+}
+
+#footer2_2 {
+    border: 1px solid red;
+}
