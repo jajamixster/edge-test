@@ -9,32 +9,27 @@
 
 header {
     background: #151C54;
-    /* border: 1px solid yellow; */
 }
 
 .container {
     max-width: 80%;
     max-width: 1535px;
     margin: 0 auto;
-    /* border: 1px solid aqua; */
 }
 
 .header-info {
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
     height: 100%;
-    /* background: #151C54; */
-    /* border: 1px solid blue; */
 }
 
 .header-info img {
-    max-width: 1111px;
+    max-width: 1216px;
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    /* border: 1px solid white; */
 }
 
 .highlight {
@@ -43,7 +38,6 @@ header {
     margin-right: auto;
     display: block;
     background: #ECF1FA;
-    /* border: 1px solid black; */
 }
 
 .highlight h1 {
@@ -61,17 +55,12 @@ header {
     display: flex;
 }
 
-#block1, #block2 {
-    margin-bottom: 0px;
+#block1 {
+    align-self: bottom;
 }
 
 #block2 {
-    /* border: 1px solid red; */
     align-self: center;
-}
-
-#block1 {
-    border: 1px solid blue;
 }
 
 .open-account-image img{
@@ -79,12 +68,11 @@ header {
     width: 40vw;
     margin-top: 0px;
     margin-right: 4vw;
-    border: 1px solid red;
+    display: block;
 }
 
 #edge_tab img {
     text-align: left;
-    /* margin-top: 5vw; */
     margin-bottom: 2vw;
     width: 7vw;
     max-width: 66px;
@@ -93,13 +81,11 @@ header {
 .start-edge-btn {
     text-align: center;
     width: 100%;
-    max-width: 500px;
     margin-top: 2vw;
     margin-bottom: 2vw;
     margin-left: 0px;
     display: block;
     text-align: left;
-    /* border: 1px solid red; */
 }
 
 .start-edge-btn img {
@@ -116,16 +102,16 @@ header {
 }
 
 .why-edge {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-top: 8vw;
-    margin-bottom: 8vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
     height: 100%;
     /* border: 1px solid red; */
 }
 
 .why-edge img {
-    max-width: 1111px;
+    max-width: 1317px;
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -134,31 +120,38 @@ header {
 }
 
 .supergraphic {
-    max-width: 100%;
-    margin: 0 auto;
     background: #ECF1FA;
-    /* border: 1px solid black; */
+    background-image: url(/img/Supergraphic.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
-.manage-by-pro img {
-    max-width: 1535px;
+.edge-professional {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: block;
+}
+
+.edge-professional img {
     width: 100%;
-    height: auto;
+    max-width: 1095px;
+    text-align: left;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
 .article {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-top: 5vh;
-    height: 100%;
-    /* border: 1px solid red; */
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 5vw;
 }
 
 .article img {
-    max-width: 1111px;
+    max-width: 1095px;
     width: 100%;
     height: auto;
     margin-left: auto;
@@ -169,9 +162,8 @@ header {
 .platform {
     margin-left: 3vw;
     margin-right: 3vw;
-    margin-top: 5vh;
+    margin-top: 5vw;
     height: 100%;
-    /* border: 1px solid red; */
 }
 
 .platform img {
@@ -235,49 +227,144 @@ header {
     margin-bottom: 4vw;
 }
 
-/* footer {
-    width: 100%;
-    height: auto;
-    background: #121A40;
-}
-
-footer img {
-    width: 100%;
-    max-width: 1536px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-} */
-
 footer {
     background: #121a40;
 }
 
 #footer_container {
-    max-width: ;
-    justify-content: center;
+    max-width: 1216px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
+}
+
+#footer1 {
+    margin-left: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+#footer_tab img {
+    width: 8vw;
+    max-width: 46px;
+}
+
+#achieve_tomorrow h1 {
+    color: white;
+    font-size: min(3.3vmin, 36px);
+    font-weight: normal;
+}
+
+#today h1 {
+    color: #EFC2AF;
+    font-size: min(3.3vmin, 36px);
+    font-weight: normal;
+}
+
+#edge_logo {
+    margin-top: 4vw;
+}
+
+#edge_logo img {
+    width: 10vw;
+    max-width: 136px;
+}
+
+#edge_logo p {
+    color: #F5F5F7;
+    margin-top: 0.5vw;
+    font-size: min(1.5vmin, 16px);
 }
 
 #footer2 {
-    justify-content: right;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 5rem;
+    margin-bottom: 3vw;
     display: flex;
-    border: 1px solid red;
 }
 
-#footer2_1 {
-    border: 1px solid red;
+#footer2_1 h1 {
+    color: #BBBDCD;
+    font-size: min(2vmin, 24px);
+    font-style: regular;
+}
+
+#follow_us img {
+    max-width: 40px;
+    width: 4vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+#download_qr_store {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5vw;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+#qr_download img{
+    width: 8vw;
+    max-width: 82px;
+    display: block;
+}
+
+#btn_download {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1vw;
+    height: 8vw;
+    max-height: 82px;
+}
+
+#btn_download_apple {
+    margin-top: 0px;
+}
+
+#btn_download_android {
+    margin-bottom: 0px;
+}
+
+#btn_download_apple img {
+    width: 10vw;
+    max-width: 99px;
+    display: block;
+}
+
+#btn_download_android img {
+    width: 10vw;
+    max-width: 99px;
+    display: block;
 }
 
 #footer2_2 {
-    border: 1px solid red;
+    margin-left: 5vw;
+}
+
+#footer2_2 H1 {
+    color: #BBBDCD;
+    font-size: min(2vmin, 24px);
+    font-style: regular;
+}
+
+#footer2_2 p {
+    color:#F5F5F7;
+    font-size: min(1.6vmin, 18px);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#address {
+    margin-top: 1.2vw;
+}
+
+.footer-bar img {
+    display: block;
+    align-self: left;
+    width: 65vw;
 }
