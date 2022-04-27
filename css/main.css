@@ -373,4 +373,5 @@ footer {
     display: block;
     align-self: left;
     width: 65vw;
+    max-width: 993px;
 }
