@@ -448,7 +448,7 @@ footer {
 }
 
 .cookie-consent-banner .btn-accept {
-    background-color: #142782;
+    background-color: #F15A38;
     color: #fff;
     padding: 0.3rem 0.5rem;
     border-radius: 0.9rem;
@@ -469,14 +469,15 @@ footer {
 
 .cookie-consent-banner .btn-decline {
     background-color: #F2F3FF;
-    color: #444BD3;
+    color: #F15A38;
     padding: 0.3rem 0.5rem;
     border-radius: 0.9rem;
 }
 
 .cookie-consent-banner .btn-decline:hover {
-    background-color: #DEE1F2;
-    color: #444BD3;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
 }
 
 .cookie-consent-banner .link-main {
