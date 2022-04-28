@@ -454,17 +454,9 @@ footer {
     border-radius: 0.9rem;
 }
 
-.cookie-consent-banner .btn-accept:focus {
-    box-shadow: 0 0 0 0.2rem rgb(135 115 188);
-}
-
 .cookie-consent-banner .btn-accept:hover {
-    background-color: #1A2258;
+    background-color: #EF3F24;
     color: #fff;
-}
-
-.cookie-consent-banner .btn-decline:focus {
-    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);
 }
 
 .cookie-consent-banner .btn-decline {
@@ -475,9 +467,9 @@ footer {
 }
 
 .cookie-consent-banner .btn-decline:hover {
-    background-color: transparent;
-    border-color: #fff;
-    color: #fff;
+    background-color: #fff;
+    border-color: #F15A38;
+    color: #F15A38;
 }
 
 .cookie-consent-banner .link-main {
