@@ -282,10 +282,11 @@ footer {
 #footer2 {
     margin-left: auto;
     margin-right: 4vw;
-    margin-top: 5rem;
+    margin-top: 7rem;
     margin-bottom: 3vw;
     display: flex;
 }
+
 
 #footer2_1 h1 {
     color: #BBBDCD;
@@ -432,7 +433,6 @@ footer {
     text-align: center;
     z-index: 1050;
     padding: 18px 48px;
-
     font-family: Tahoma, Verdana, sans-serif;
     font-size: 13px;
     text-align: left;
@@ -448,9 +448,10 @@ footer {
 }
 
 .cookie-consent-banner .btn-accept {
-    background-color: #594f74;
-    border-color: #594f74;
+    background-color: #142782;
     color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.9rem;
 }
 
 .cookie-consent-banner .btn-accept:focus {
@@ -458,14 +459,7 @@ footer {
 }
 
 .cookie-consent-banner .btn-accept:hover {
-    background-color: #463e5c;
-    border-color: #463e5c;
-    color: #fff;
-}
-
-.cookie-consent-banner .btn-decline {
-    background-color: transparent;
-    border-color: #adacb9;
+    background-color: #1A2258;
     color: #fff;
 }
 
@@ -474,19 +468,19 @@ footer {
 }
 
 .cookie-consent-banner .btn-decline {
-    background-color: transparent;
-    border-color: #adacb9;
-    color: #fff;
+    background-color: #F2F3FF;
+    color: #444BD3;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.9rem;
 }
 
 .cookie-consent-banner .btn-decline:hover {
-    background-color: transparent;
-    border-color: #fff;
-    color: #fff;
+    background-color: #DEE1F2;
+    color: #444BD3;
 }
 
 .cookie-consent-banner .link-main {
-    color: #9385b8;
+    color: #F15A38;
     text-decoration: underline;
 }
 
@@ -499,6 +493,11 @@ footer {
     .cookie-consent-banner .btn {
         font-size: 1em;
     }
+
+    #footer2 {
+        margin-top: 3rem;
+    }
+}
 }
 
 /* END cookie consent banner */

@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>EDGE Invest by KKP</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/main.css">
+
     <!-- Google Tag Manager -->
     <script>
         // Default ad_storage to 'denied'.
@@ -11,29 +20,25 @@
             'analytics_storage': 'denied',
             'ad_storage': 'denied'
         });
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5TSL87W');</script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5TSL87W');
+    </script>
     <!-- End Google Tag Manager -->
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <title>EDGE Invest by KKP</title>
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-    <link rel="stylesheet" href="./css/main.css">
+    <script>
+        function activateTrigger() {
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted'
+            });
+        }
+        function deactivateTrigger () {
+        }
+    </script>
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSL87W" height="0" width="0"
-                style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSL87W" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <script>
@@ -197,7 +202,9 @@
     </footer>
 
     <!-- Cookie Consent Banner -->
+    <!-- Debug Cookie Banner -->
     <div class="cookie-consent-banner" style="display: block;">
+    <!-- <div class="cookie-consent-banner"> -->
         <div class="row">
             <div id="cookie-banner-detail-upper" class="col">
                 <span>
