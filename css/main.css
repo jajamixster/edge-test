@@ -375,3 +375,130 @@ footer {
     width: 65vw;
     max-width: 993px;
 }
+
+/* cookie consent banner */
+
+/* some bootstrap style */
+.cookie-consent-banner .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.cookie-consent-banner .col {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.cookie-consent-banner .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: initial;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s;
+}
+
+.cookie-consent-banner .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+/* END some bootstrap style */
+
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(61, 60, 62, .9);
+    padding: 10px;
+    text-align: center;
+    z-index: 1050;
+    padding: 18px 48px;
+
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    color: #fff;
+    line-height: 1.5;
+
+    display: none;
+}
+
+.cookie-consent-banner .row {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.cookie-consent-banner .btn-accept {
+    background-color: #594f74;
+    border-color: #594f74;
+    color: #fff;
+}
+
+.cookie-consent-banner .btn-accept:focus {
+    box-shadow: 0 0 0 0.2rem rgb(135 115 188);
+}
+
+.cookie-consent-banner .btn-accept:hover {
+    background-color: #463e5c;
+    border-color: #463e5c;
+    color: #fff;
+}
+
+.cookie-consent-banner .btn-decline {
+    background-color: transparent;
+    border-color: #adacb9;
+    color: #fff;
+}
+
+.cookie-consent-banner .btn-decline:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 25%);
+}
+
+.cookie-consent-banner .btn-decline {
+    background-color: transparent;
+    border-color: #adacb9;
+    color: #fff;
+}
+
+.cookie-consent-banner .btn-decline:hover {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.cookie-consent-banner .link-main {
+    color: #9385b8;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .cookie-consent-banner {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+
+    .cookie-consent-banner .btn {
+        font-size: 1em;
+    }
+}
+
+/* END cookie consent banner */

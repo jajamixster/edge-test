@@ -13,11 +13,22 @@
     <!-- End Google Analytic -->
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5TSL87W');</script>
+    <script>
+        // Default ad_storage to 'denied'.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied'
+        });
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5TSL87W');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -31,9 +42,20 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSL87W"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TSL87W" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+        function activateTrigger() {
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted'
+            });
+        }
+        function deactivateTrigger() {
+        }
+    </script>
     
     <header>
         <div class="container">
@@ -183,5 +205,120 @@
             <img src="./img/footer_bar.png" alt="edge footer">
         </div>
     </footer>
-</body>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent-banner" style="display: block;">
+        <div class="row">
+            <div id="cookie-banner-detail-upper" class="col">
+                <span>
+                    บริษัทใช้งานคุกกี้ (Cookies) เพื่อมอบประสบการณ์การใช้งานเว็บไซต์ของบริษัทที่ดีขึ้น
+                    รวมถึงใช้ในการทำการตลาดให้ตรงตามความสนใจของท่านมากที่สุด โดยท่านสามารถเลือก
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button id="cookie-banner-btn-decline" type="button" class="btn btn-sm btn-decline">ปฏิเสธคุกกี้</button>
+                &nbsp;
+                <button id="cookie-banner-btn-accept" type="button" class="btn btn-sm btn-accept">ยอมรับคุกกี้</button>
+            </div>
+        </div>
+        <div class="row">
+            <div id="cookie-banner-detail-lower" class="col">
+                <span>
+                    หากท่านปฏิเสธคุกกี้ หรือยังคงใช้งานเว็บไซต์ต่อไป บริษัทจะยังคงเก็บคุกกี้ (Cookies)
+                    ที่มีความจำเป็นต่อการใช้งานเว็บไซต์ของท่านเท่านั้น
+                    ทั้งนี้ท่านสามารถตั้งค่าการจัดการคุกกี้ได้ตามวิธีการตั้งค่าที่ระบุไว้ในแต่ละเว็บเบราเซอร์ที่ใช้บริการ
+                    ท่านสามารถอ่านรายละเอียดเพิ่มเติมเกี่ยวกับการใช้คุกกี้ของเราได้ที่
+
+                    <a class="link-main" href="https://www.kkpfg.com/th/cookies-policy" target="_blank">นโยบายการใช้คุกกี้ (Cookies Policy)</a>
+
+                    และ
+
+                    <a class="link-main" href="https://www.kkpfg.com/th/dataprotection" target="_blank">ประกาศความเป็นส่วนตัว (Privacy Notice)</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End Cookie Consent Banner -->
+
+    <!-- Cookie Consent JS -->
+    <script>
+        const accept = 'Accept-1.0';
+        const decline = 'Reject-1.0';
+        const cookieConsentName = 'cookie-policy';
+        // check cookie has consent or not on load.
+        document.addEventListener('DOMContentLoaded', async function () {
+            let isAccepted = null;
+            let consent = getCookieByName(cookieConsentName);
+            if (consent == null)
+                isAccepted = null;
+            else
+                isAccepted = consent == accept;
+            if (isAccepted == null)
+                showCookieConsentBanner();
+            else if (isAccepted)
+                callActivateTrigger();
+            else if (!isAccepted)
+                callDeactivateTrigger();
+        });
+
+        document.getElementById('cookie-banner-btn-accept').addEventListener('click', acceptCookieConsent);
+        function acceptCookieConsent() {
+            submitCookieConsent(true);
+            hideCookieConsentBanner();
+            callActivateTrigger();
+        }
+
+        document.getElementById('cookie-banner-btn-decline').addEventListener('click', declineCookieConsent);
+        function declineCookieConsent() {
+            submitCookieConsent(false);
+            hideCookieConsentBanner();
+            callDeactivateTrigger();
+        }
+
+        function showCookieConsentBanner() {
+            document.querySelector('.cookie-consent-banner').style.display = 'block';
+        }
+
+        function hideCookieConsentBanner() {
+            document.querySelector('.cookie-consent-banner').style.display = 'none';
+        }
+
+        function submitCookieConsent(isAccepted) {
+            if (isAccepted) {
+                document.cookie = `${cookieConsentName}=${accept}; path=/; expires=${new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).toUTCString()}`;
+            } else {
+                document.cookie = `${cookieConsentName}=${decline}; path=/; expires=${new Date(new Date().getTime() + (24 * 60 * 60 * 1000)).toUTCString()}`;
+            }
+        }
+
+        function getCookieByName(name) {
+            var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            if (match)
+                return match[2];
+            return null;
+        }
+
+        function callActivateTrigger() {
+            try {
+                // activateTrigger is function usually defined at top level of website (like index.html) to contain all the code to be executed when user accept cookie consent. 
+                activateTrigger();
+
+            } catch {
+                console.warn('activateTrigger is not defined.');
+            }
+        }
+
+        function callDeactivateTrigger() {
+            try {
+                // deactivateTrigger is function usually defined at top level of website (like index.html) to contain all the code to be executed to stop tracking when user decline cookie consent. 
+                deactivateTrigger();
+
+            } catch {
+                console.warn('deactivateTrigger is not defined.');
+            }
+        }
+    </script>
+
 </html>
