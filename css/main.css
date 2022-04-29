@@ -366,6 +366,14 @@ footer {
     text-decoration: none;
 }
 
+#footer2_2 a{
+    color: #F5F5F7;
+    font-size: min(1.6vmin, 18px);
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    text-decoration: none;
+}
+
 #address {
     margin-top: 2vw;
 }
@@ -490,7 +498,6 @@ footer {
     #footer2 {
         margin-top: 3rem;
     }
-}
 }
 
 /* END cookie consent banner */
